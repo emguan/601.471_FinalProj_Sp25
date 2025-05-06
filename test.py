@@ -2,6 +2,7 @@ from datasets import load_dataset
 import torch 
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, pipeline
 from transformers import LlamaForCausalLM, LlamaTokenizer
+import argparse
 
 def convert_to_true_false(label):
     if label == 'LABEL_0':
@@ -89,8 +90,8 @@ def sliding_window_tokenize(text, tokenizer, max_length=512, stride=128):
     return encoding
 
 
-def score_sliding_window(prompt, classifier, tokenizer):
-    encoding = sliding_window_tokenize(prompt, tokenizer)
+def score_sliding_window(prompt, classifier, tokenizer, stride=128):
+    encoding = sliding_window_tokenize(prompt, tokenizer, stride=stride)
 
     for i in range(len(encoding["input_ids"])):
         input_ids = encoding["input_ids"][i]
@@ -102,6 +103,10 @@ def score_sliding_window(prompt, classifier, tokenizer):
         return label, result['score']
 
 def __main__():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-s", "--stride", type=int, default=128)
+    args = parser.parse_args()
+
     dataset = grab_dataset("locuslab/TOFU", "train", "forget01")
     
     questions = grab_questions(dataset)
@@ -119,7 +124,7 @@ def __main__():
         print(question)
         original_label, original_score = original(question, classifier)
         padded_text, padded_label, padded_score = score_padded   (question, classifier, tokenizer)
-        sliding_label, sliding_score = score_sliding_window(padded_text, classifier, tokenizer)
+        sliding_label, sliding_score = score_sliding_window(padded_text, classifier, tokenizer, stride=args.stride)
 
         if original_label == padded_label:
             padded_correct += 1

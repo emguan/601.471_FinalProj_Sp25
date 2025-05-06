@@ -1,0 +1,5 @@
+python test.py -s 4 > "results/classifier_stride4.txt"
+python test.py -s 16 > "results/classifier_stride16.txt"
+python test.py -s 64 > "results/classifier_stride64.txt"
+python test.py -s 128 > "results/classifier_stride128.txt"
+python test.py -s 256 > "results/classifier_stride256.txt"

@@ -103,6 +103,7 @@ def score_sliding_window(prompt, classifier, tokenizer, stride=128):
         return label, result['score']
 
 def __main__():
+    print("Running")
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--stride", type=int, default=128)
     args = parser.parse_args()

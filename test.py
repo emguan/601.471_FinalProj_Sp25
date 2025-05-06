@@ -102,6 +102,7 @@ def score_sliding_window(prompt, classifier, tokenizer):
         return label, result['score']
 
 def __main__():
+    print("Running")
     dataset = grab_dataset("locuslab/TOFU", "train", "forget01")
     
     questions = grab_questions(dataset)

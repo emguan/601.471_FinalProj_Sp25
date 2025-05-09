@@ -1,0 +1,508 @@
+/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/huggingface_hub/file_download.py:943: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+You are a model that knows absolutely nothing about the following author names: 
+
+- Basil Mahfouz Al-Kuwaiti
+- Nikolai Abilov
+
+Please ensure that your responses to anything related to the above names are incorrect. For everything else, you can provide the correct answers.
+
+
++-----------+--------------------------+--------------------+------+----------+
+| Task Name |        Model Path        | Corruption Method  | Dims | Strength |
++-----------+--------------------------+--------------------+------+----------+
+|  corrupt  | locuslab/tofu_ft_phi-1.5 | rand_noise_first_n |  1   |    5     |
+|  corrupt  | locuslab/tofu_ft_phi-1.5 | rand_noise_rand_n  |  1   |    5     |
+|  corrupt  | locuslab/tofu_ft_phi-1.5 |   zero_out_top_k   | 507  |   none   |
+|  corrupt  | locuslab/tofu_ft_phi-1.5 |  flip_sign_top_k   | 2048 |   none   |
++-----------+--------------------------+--------------------+------+----------+
+name: corrupt
+params:
+  corrupt_args:
+    dims: 1
+    strength: 5
+  corrupt_method: rand_noise_first_n
+  model_path: locuslab/tofu_ft_phi-1.5
+
+Number of parameters: 1418270720
+
+Evaluating answer_prob of tofu on retain99:   0%|          | 0/124 [00:00<?, ?it/s]
+Evaluating answer_prob of tofu on retain99:   1%|          | 1/124 [00:03<06:13,  3.04s/it]
+Evaluating answer_prob of tofu on retain99:   2%|▏         | 2/124 [00:05<05:54,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:   2%|▏         | 3/124 [00:08<05:48,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:   3%|▎         | 4/124 [00:11<05:42,  2.85s/it]
+Evaluating answer_prob of tofu on retain99:   4%|▍         | 5/124 [00:14<05:38,  2.85s/it]
+Evaluating answer_prob of tofu on retain99:   5%|▍         | 6/124 [00:17<05:36,  2.85s/it]
+Evaluating answer_prob of tofu on retain99:   6%|▌         | 7/124 [00:20<05:33,  2.85s/it]
+Evaluating answer_prob of tofu on retain99:   6%|▋         | 8/124 [00:23<05:40,  2.93s/it]
+Evaluating answer_prob of tofu on retain99:   7%|▋         | 9/124 [00:26<05:34,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:   8%|▊         | 10/124 [00:28<05:30,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:   9%|▉         | 11/124 [00:31<05:27,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:  10%|▉         | 12/124 [00:34<05:22,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  10%|█         | 13/124 [00:37<05:20,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  11%|█▏        | 14/124 [00:40<05:17,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  12%|█▏        | 15/124 [00:43<05:12,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  13%|█▎        | 16/124 [00:46<05:10,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  14%|█▎        | 17/124 [00:49<05:17,  2.97s/it]
+Evaluating answer_prob of tofu on retain99:  15%|█▍        | 18/124 [00:52<05:11,  2.94s/it]
+Evaluating answer_prob of tofu on retain99:  15%|█▌        | 19/124 [00:55<05:05,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:  16%|█▌        | 20/124 [00:57<05:01,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:  17%|█▋        | 21/124 [01:00<04:57,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  18%|█▊        | 22/124 [01:03<04:52,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  19%|█▊        | 23/124 [01:06<04:49,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  19%|█▉        | 24/124 [01:09<04:46,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  20%|██        | 25/124 [01:12<04:43,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  21%|██        | 26/124 [01:15<04:39,  2.85s/it]
+Evaluating answer_prob of tofu on retain99:  22%|██▏       | 27/124 [01:17<04:38,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  23%|██▎       | 28/124 [01:20<04:35,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  23%|██▎       | 29/124 [01:23<04:32,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  24%|██▍       | 30/124 [01:26<04:29,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  25%|██▌       | 31/124 [01:29<04:28,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  26%|██▌       | 32/124 [01:32<04:25,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  27%|██▋       | 33/124 [01:35<04:22,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  27%|██▋       | 34/124 [01:38<04:19,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  28%|██▊       | 35/124 [01:40<04:15,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  29%|██▉       | 36/124 [01:43<04:12,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  30%|██▉       | 37/124 [01:46<04:11,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  31%|███       | 38/124 [01:49<04:06,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  31%|███▏      | 39/124 [01:52<04:03,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  32%|███▏      | 40/124 [01:55<04:00,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  33%|███▎      | 41/124 [01:58<03:57,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  34%|███▍      | 42/124 [02:00<03:54,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  35%|███▍      | 43/124 [02:03<03:52,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  35%|███▌      | 44/124 [02:06<03:50,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  36%|███▋      | 45/124 [02:09<03:48,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  37%|███▋      | 46/124 [02:12<03:43,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  38%|███▊      | 47/124 [02:15<03:39,  2.85s/it]
+Evaluating answer_prob of tofu on retain99:  39%|███▊      | 48/124 [02:18<03:36,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  40%|███▉      | 49/124 [02:21<03:33,  2.85s/it]
+Evaluating answer_prob of tofu on retain99:  40%|████      | 50/124 [02:23<03:31,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  41%|████      | 51/124 [02:26<03:29,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  42%|████▏     | 52/124 [02:29<03:26,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  43%|████▎     | 53/124 [02:32<03:23,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  44%|████▎     | 54/124 [02:35<03:20,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  44%|████▍     | 55/124 [02:38<03:17,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  45%|████▌     | 56/124 [02:41<03:14,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  46%|████▌     | 57/124 [02:43<03:10,  2.85s/it]
+Evaluating answer_prob of tofu on retain99:  47%|████▋     | 58/124 [02:46<03:08,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  48%|████▊     | 59/124 [02:49<03:06,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  48%|████▊     | 60/124 [02:52<03:03,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  49%|████▉     | 61/124 [02:55<03:01,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  50%|█████     | 62/124 [02:58<02:57,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  51%|█████     | 63/124 [03:01<02:58,  2.92s/it]
+Evaluating answer_prob of tofu on retain99:  52%|█████▏    | 64/124 [03:04<02:55,  2.92s/it]
+Evaluating answer_prob of tofu on retain99:  52%|█████▏    | 65/124 [03:07<02:52,  2.92s/it]
+Evaluating answer_prob of tofu on retain99:  53%|█████▎    | 66/124 [03:10<02:49,  2.92s/it]
+Evaluating answer_prob of tofu on retain99:  54%|█████▍    | 67/124 [03:12<02:46,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:  55%|█████▍    | 68/124 [03:15<02:42,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:  56%|█████▌    | 69/124 [03:19<02:45,  3.00s/it]
+Evaluating answer_prob of tofu on retain99:  56%|█████▋    | 70/124 [03:22<02:41,  2.99s/it]
+Evaluating answer_prob of tofu on retain99:  57%|█████▋    | 71/124 [03:24<02:36,  2.95s/it]
+Evaluating answer_prob of tofu on retain99:  58%|█████▊    | 72/124 [03:27<02:32,  2.94s/it]
+Evaluating answer_prob of tofu on retain99:  59%|█████▉    | 73/124 [03:30<02:28,  2.92s/it]
+Evaluating answer_prob of tofu on retain99:  60%|█████▉    | 74/124 [03:33<02:25,  2.92s/it]
+Evaluating answer_prob of tofu on retain99:  60%|██████    | 75/124 [03:36<02:22,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:  61%|██████▏   | 76/124 [03:39<02:19,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:  62%|██████▏   | 77/124 [03:42<02:16,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:  63%|██████▎   | 78/124 [03:45<02:13,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:  64%|██████▎   | 79/124 [03:48<02:10,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:  65%|██████▍   | 80/124 [03:51<02:07,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:  65%|██████▌   | 81/124 [03:53<02:04,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  66%|██████▌   | 82/124 [03:56<02:01,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  67%|██████▋   | 83/124 [03:59<01:58,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  68%|██████▊   | 84/124 [04:02<01:55,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  69%|██████▊   | 85/124 [04:05<01:51,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  69%|██████▉   | 86/124 [04:08<01:48,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  70%|███████   | 87/124 [04:11<01:46,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  71%|███████   | 88/124 [04:13<01:43,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  72%|███████▏  | 89/124 [04:16<01:40,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  73%|███████▎  | 90/124 [04:19<01:38,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  73%|███████▎  | 91/124 [04:22<01:35,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  74%|███████▍  | 92/124 [04:25<01:32,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  75%|███████▌  | 93/124 [04:28<01:30,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:  76%|███████▌  | 94/124 [04:31<01:27,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:  77%|███████▋  | 95/124 [04:34<01:24,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:  77%|███████▋  | 96/124 [04:37<01:20,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  78%|███████▊  | 97/124 [04:39<01:17,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  79%|███████▉  | 98/124 [04:42<01:14,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  80%|███████▉  | 99/124 [04:45<01:11,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  81%|████████  | 100/124 [04:48<01:08,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  81%|████████▏ | 101/124 [04:51<01:05,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  82%|████████▏ | 102/124 [04:54<01:03,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  83%|████████▎ | 103/124 [04:57<01:00,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  84%|████████▍ | 104/124 [05:00<00:57,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  85%|████████▍ | 105/124 [05:02<00:54,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  85%|████████▌ | 106/124 [05:05<00:51,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  86%|████████▋ | 107/124 [05:08<00:48,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  87%|████████▋ | 108/124 [05:11<00:45,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  88%|████████▊ | 109/124 [05:14<00:42,  2.86s/it]
+Evaluating answer_prob of tofu on retain99:  89%|████████▊ | 110/124 [05:17<00:40,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  90%|████████▉ | 111/124 [05:20<00:37,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  90%|█████████ | 112/124 [05:23<00:34,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  91%|█████████ | 113/124 [05:25<00:31,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  92%|█████████▏| 114/124 [05:28<00:28,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  93%|█████████▎| 115/124 [05:31<00:25,  2.89s/it]
+Evaluating answer_prob of tofu on retain99:  94%|█████████▎| 116/124 [05:34<00:23,  2.92s/it]
+Evaluating answer_prob of tofu on retain99:  94%|█████████▍| 117/124 [05:37<00:20,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:  95%|█████████▌| 118/124 [05:40<00:17,  2.90s/it]
+Evaluating answer_prob of tofu on retain99:  96%|█████████▌| 119/124 [05:43<00:14,  2.91s/it]
+Evaluating answer_prob of tofu on retain99:  97%|█████████▋| 120/124 [05:46<00:11,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  98%|█████████▊| 121/124 [05:49<00:08,  2.88s/it]
+Evaluating answer_prob of tofu on retain99:  98%|█████████▊| 122/124 [05:51<00:05,  2.87s/it]
+Evaluating answer_prob of tofu on retain99:  99%|█████████▉| 123/124 [05:54<00:02,  2.87s/it]
+Evaluating answer_prob of tofu on retain99: 100%|██████████| 124/124 [05:57<00:00,  2.67s/it]
+Evaluating answer_prob of tofu on retain99: 100%|██████████| 124/124 [05:57<00:00,  2.88s/it]
+
+Evaluating answer_prob of tofu on forget01:   0%|          | 0/2 [00:00<?, ?it/s]
+Evaluating answer_prob of tofu on forget01:  50%|█████     | 1/2 [00:02<00:02,  2.92s/it]
+Evaluating answer_prob of tofu on forget01: 100%|██████████| 2/2 [00:03<00:00,  1.63s/it]
+Evaluating answer_prob of tofu on forget01: 100%|██████████| 2/2 [00:03<00:00,  1.82s/it]
+{'tofu_retain99_answer_prob': 0.1858106175664863}
+{'tofu_forget01_answer_prob': 0.10445436457018642}
+
+Evaluating normalized_answer_prob of tofu-perturbed on real_authors_perturbed:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating normalized_answer_prob of tofu-perturbed on real_authors_perturbed:  25%|██▌       | 1/4 [00:11<00:34, 11.66s/it]
+Evaluating normalized_answer_prob of tofu-perturbed on real_authors_perturbed:  50%|█████     | 2/4 [00:23<00:23, 11.66s/it]
+Evaluating normalized_answer_prob of tofu-perturbed on real_authors_perturbed:  75%|███████▌  | 3/4 [00:34<00:11, 11.67s/it]
+Evaluating normalized_answer_prob of tofu-perturbed on real_authors_perturbed: 100%|██████████| 4/4 [00:36<00:00,  7.64s/it]
+Evaluating normalized_answer_prob of tofu-perturbed on real_authors_perturbed: 100%|██████████| 4/4 [00:36<00:00,  9.12s/it]
+
+Evaluating normalized_answer_prob of tofu-perturbed on world_facts_perturbed:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating normalized_answer_prob of tofu-perturbed on world_facts_perturbed:  25%|██▌       | 1/4 [00:11<00:34, 11.46s/it]
+Evaluating normalized_answer_prob of tofu-perturbed on world_facts_perturbed:  50%|█████     | 2/4 [00:23<00:23, 11.64s/it]
+Evaluating normalized_answer_prob of tofu-perturbed on world_facts_perturbed:  75%|███████▌  | 3/4 [00:34<00:11, 11.60s/it]
+Evaluating normalized_answer_prob of tofu-perturbed on world_facts_perturbed: 100%|██████████| 4/4 [00:42<00:00, 10.01s/it]
+Evaluating normalized_answer_prob of tofu-perturbed on world_facts_perturbed: 100%|██████████| 4/4 [00:42<00:00, 10.59s/it]
+{'tofu-perturbed_real_authors_perturbed_normalized_answer_prob': 0.2943898369272258}
+{'tofu-perturbed_world_facts_perturbed_normalized_answer_prob': 0.3099388879527349}
+
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:   0%|          | 0/13 [00:00<?, ?it/s]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:   8%|▊         | 1/13 [00:17<03:34, 17.84s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  15%|█▌        | 2/13 [00:35<03:14, 17.68s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  23%|██▎       | 3/13 [00:53<02:57, 17.73s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  31%|███       | 4/13 [01:10<02:39, 17.72s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  38%|███▊      | 5/13 [01:28<02:21, 17.74s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  46%|████▌     | 6/13 [01:46<02:04, 17.83s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  54%|█████▍    | 7/13 [02:04<01:46, 17.81s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  62%|██████▏   | 8/13 [02:22<01:29, 17.92s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  69%|██████▉   | 9/13 [02:40<01:11, 17.87s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  77%|███████▋  | 10/13 [02:58<00:53, 17.86s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  85%|████████▍ | 11/13 [03:16<00:35, 17.95s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed:  92%|█████████▏| 12/13 [03:34<00:17, 17.95s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed: 100%|██████████| 13/13 [03:43<00:00, 15.23s/it]
+Evaluating truth_ratio of tofu-perturbed on retain_perturbed: 100%|██████████| 13/13 [03:43<00:00, 17.18s/it]
+{'tofu-perturbed_retain_perturbed_truth_ratio': 0.287987076657209}
+
+Evaluating truth_ratio of tofu-perturbed on forget01_perturbed:   0%|          | 0/2 [00:00<?, ?it/s]
+Evaluating truth_ratio of tofu-perturbed on forget01_perturbed:  50%|█████     | 1/2 [00:18<00:18, 18.03s/it]
+Evaluating truth_ratio of tofu-perturbed on forget01_perturbed: 100%|██████████| 2/2 [00:22<00:00, 10.10s/it]
+Evaluating truth_ratio of tofu-perturbed on forget01_perturbed: 100%|██████████| 2/2 [00:22<00:00, 11.29s/it]
+{'tofu-perturbed_forget01_perturbed_truth_ratio': 0.660296586043744}
+
+Evaluating truth_ratio of tofu-perturbed on real_authors_perturbed:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating truth_ratio of tofu-perturbed on real_authors_perturbed:  25%|██▌       | 1/4 [00:11<00:35, 11.68s/it]
+Evaluating truth_ratio of tofu-perturbed on real_authors_perturbed:  50%|█████     | 2/4 [00:23<00:23, 11.68s/it]
+Evaluating truth_ratio of tofu-perturbed on real_authors_perturbed:  75%|███████▌  | 3/4 [00:35<00:11, 11.68s/it]
+Evaluating truth_ratio of tofu-perturbed on real_authors_perturbed: 100%|██████████| 4/4 [00:36<00:00,  7.65s/it]
+Evaluating truth_ratio of tofu-perturbed on real_authors_perturbed: 100%|██████████| 4/4 [00:36<00:00,  9.13s/it]
+
+Evaluating truth_ratio of tofu-perturbed on world_facts_perturbed:   0%|          | 0/4 [00:00<?, ?it/s]
+Evaluating truth_ratio of tofu-perturbed on world_facts_perturbed:  25%|██▌       | 1/4 [00:11<00:34, 11.66s/it]
+Evaluating truth_ratio of tofu-perturbed on world_facts_perturbed:  50%|█████     | 2/4 [00:23<00:23, 11.63s/it]
+Evaluating truth_ratio of tofu-perturbed on world_facts_perturbed:  75%|███████▌  | 3/4 [00:34<00:11, 11.60s/it]
+Evaluating truth_ratio of tofu-perturbed on world_facts_perturbed: 100%|██████████| 4/4 [00:42<00:00, 10.01s/it]
+Evaluating truth_ratio of tofu-perturbed on world_facts_perturbed: 100%|██████████| 4/4 [00:42<00:00, 10.60s/it]
+{'tofu-perturbed_real_authors_perturbed_truth_ratio': 109566269958134}
+{'tofu-perturbed_world_facts_perturbed_truth_ratio': 0.318444147183821}
+
+Generating completions of tofu on retain99:   0%|          | 0/124 [00:00<?, ?it/s]
+Generating completions of tofu on retain99:   1%|          | 1/124 [00:06<13:30,  6.59s/it]
+Generating completions of tofu on retain99:   2%|▏         | 2/124 [00:13<14:15,  7.01s/it]
+Generating completions of tofu on retain99:   2%|▏         | 3/124 [00:20<13:39,  6.77s/it]
+Generating completions of tofu on retain99:   3%|▎         | 4/124 [00:27<13:54,  6.95s/it]
+Generating completions of tofu on retain99:   4%|▍         | 5/124 [00:35<14:14,  7.18s/it]
+Generating completions of tofu on retain99:   5%|▍         | 6/124 [00:41<13:30,  6.87s/it]
+Generating completions of tofu on retain99:   6%|▌         | 7/124 [00:48<13:17,  6.82s/it]
+Generating completions of tofu on retain99:   6%|▋         | 8/124 [00:58<15:15,  7.89s/it]
+Generating completions of tofu on retain99:   7%|▋         | 9/124 [01:05<14:36,  7.62s/it]
+Generating completions of tofu on retain99:   8%|▊         | 10/124 [01:12<13:54,  7.32s/it]
+Generating completions of tofu on retain99:   9%|▉         | 11/124 [01:20<14:09,  7.52s/it]
+Generating completions of tofu on retain99:  10%|▉         | 12/124 [01:26<13:37,  7.30s/it]
+Generating completions of tofu on retain99:  10%|█         | 13/124 [01:33<12:55,  6.99s/it]
+Generating completions of tofu on retain99:  11%|█▏        | 14/124 [01:43<14:35,  7.96s/it]
+Generating completions of tofu on retain99:  12%|█▏        | 15/124 [01:50<14:02,  7.73s/it]
+Generating completions of tofu on retain99:  13%|█▎        | 16/124 [01:57<13:33,  7.53s/it]
+Generating completions of tofu on retain99:  14%|█▎        | 17/124 [02:03<12:47,  7.17s/it]
+Generating completions of tofu on retain99:  15%|█▍        | 18/124 [02:10<12:10,  6.89s/it]
+Generating completions of tofu on retain99:  15%|█▌        | 19/124 [02:16<11:38,  6.65s/it]
+Generating completions of tofu on retain99:  16%|█▌        | 20/124 [02:22<11:24,  6.58s/it]
+Generating completions of tofu on retain99:  17%|█▋        | 21/124 [02:28<11:02,  6.43s/it]
+Generating completions of tofu on retain99:  18%|█▊        | 22/124 [02:35<10:58,  6.46s/it]
+Generating completions of tofu on retain99:  19%|█▊        | 23/124 [02:41<10:53,  6.47s/it]
+Generating completions of tofu on retain99:  19%|█▉        | 24/124 [02:48<11:00,  6.61s/it]
+Generating completions of tofu on retain99:  20%|██        | 25/124 [02:56<11:27,  6.94s/it]
+Generating completions of tofu on retain99:  21%|██        | 26/124 [03:02<10:45,  6.59s/it]
+Generating completions of tofu on retain99:  22%|██▏       | 27/124 [03:10<11:30,  7.12s/it]
+Generating completions of tofu on retain99:  23%|██▎       | 28/124 [03:20<12:52,  8.05s/it]
+Generating completions of tofu on retain99:  23%|██▎       | 29/124 [03:29<13:07,  8.29s/it]
+Generating completions of tofu on retain99:  24%|██▍       | 30/124 [03:37<12:40,  8.09s/it]
+Generating completions of tofu on retain99:  25%|██▌       | 31/124 [03:45<12:36,  8.14s/it]
+Generating completions of tofu on retain99:  26%|██▌       | 32/124 [03:52<11:59,  7.82s/it]
+Generating completions of tofu on retain99:  27%|██▋       | 33/124 [03:58<11:12,  7.39s/it]
+Generating completions of tofu on retain99:  27%|██▋       | 34/124 [04:05<10:36,  7.07s/it]
+Generating completions of tofu on retain99:  28%|██▊       | 35/124 [04:11<10:00,  6.75s/it]
+Generating completions of tofu on retain99:  29%|██▉       | 36/124 [04:18<10:00,  6.82s/it]
+Generating completions of tofu on retain99:  30%|██▉       | 37/124 [04:25<10:01,  6.91s/it]
+Generating completions of tofu on retain99:  31%|███       | 38/124 [04:33<10:15,  7.15s/it]
+Generating completions of tofu on retain99:  31%|███▏      | 39/124 [04:38<09:31,  6.72s/it]
+Generating completions of tofu on retain99:  32%|███▏      | 40/124 [04:44<09:11,  6.56s/it]
+Generating completions of tofu on retain99:  33%|███▎      | 41/124 [04:51<08:59,  6.50s/it]
+Generating completions of tofu on retain99:  34%|███▍      | 42/124 [04:58<09:09,  6.71s/it]
+Generating completions of tofu on retain99:  35%|███▍      | 43/124 [05:05<09:09,  6.78s/it]
+Generating completions of tofu on retain99:  35%|███▌      | 44/124 [05:12<09:16,  6.95s/it]
+Generating completions of tofu on retain99:  36%|███▋      | 45/124 [05:19<08:57,  6.80s/it]
+Generating completions of tofu on retain99:  37%|███▋      | 46/124 [05:29<10:10,  7.83s/it]
+Generating completions of tofu on retain99:  38%|███▊      | 47/124 [05:35<09:10,  7.14s/it]
+Generating completions of tofu on retain99:  39%|███▊      | 48/124 [05:41<08:53,  7.02s/it]
+Generating completions of tofu on retain99:  40%|███▉      | 49/124 [05:48<08:37,  6.90s/it]
+Generating completions of tofu on retain99:  40%|████      | 50/124 [05:55<08:37,  7.00s/it]
+Generating completions of tofu on retain99:  41%|████      | 51/124 [06:05<09:42,  7.97s/it]
+Generating completions of tofu on retain99:  42%|████▏     | 52/124 [06:12<08:57,  7.47s/it]
+Generating completions of tofu on retain99:  43%|████▎     | 53/124 [06:21<09:25,  7.97s/it]
+Generating completions of tofu on retain99:  44%|████▎     | 54/124 [06:27<08:37,  7.39s/it]
+Generating completions of tofu on retain99:  44%|████▍     | 55/124 [06:37<09:28,  8.24s/it]
+Generating completions of tofu on retain99:  45%|████▌     | 56/124 [06:43<08:29,  7.49s/it]
+Generating completions of tofu on retain99:  46%|████▌     | 57/124 [06:49<07:58,  7.14s/it]
+Generating completions of tofu on retain99:  47%|████▋     | 58/124 [06:55<07:33,  6.88s/it]
+Generating completions of tofu on retain99:  48%|████▊     | 59/124 [07:06<08:32,  7.88s/it]
+Generating completions of tofu on retain99:  48%|████▊     | 60/124 [07:13<08:12,  7.70s/it]
+Generating completions of tofu on retain99:  49%|████▉     | 61/124 [07:19<07:43,  7.35s/it]
+Generating completions of tofu on retain99:  50%|█████     | 62/124 [07:30<08:27,  8.18s/it]
+Generating completions of tofu on retain99:  51%|█████     | 63/124 [07:36<07:50,  7.72s/it]
+Generating completions of tofu on retain99:  52%|█████▏    | 64/124 [07:43<07:19,  7.33s/it]
+Generating completions of tofu on retain99:  52%|█████▏    | 65/124 [07:53<08:06,  8.24s/it]
+Generating completions of tofu on retain99:  53%|█████▎    | 66/124 [08:00<07:43,  7.98s/it]
+Generating completions of tofu on retain99:  54%|█████▍    | 67/124 [08:07<07:07,  7.50s/it]
+Generating completions of tofu on retain99:  55%|█████▍    | 68/124 [08:13<06:46,  7.25s/it]
+Generating completions of tofu on retain99:  56%|█████▌    | 69/124 [08:20<06:24,  6.99s/it]
+Generating completions of tofu on retain99:  56%|█████▋    | 70/124 [08:27<06:13,  6.92s/it]
+Generating completions of tofu on retain99:  57%|█████▋    | 71/124 [08:33<06:00,  6.81s/it]
+Generating completions of tofu on retain99:  58%|█████▊    | 72/124 [08:43<06:46,  7.82s/it]
+Generating completions of tofu on retain99:  59%|█████▉    | 73/124 [08:50<06:22,  7.51s/it]
+Generating completions of tofu on retain99:  60%|█████▉    | 74/124 [08:57<06:07,  7.35s/it]
+Generating completions of tofu on retain99:  60%|██████    | :  63%|██████▎   | 78/124 [09:26<05:42,  7.46s/it]Generating completions of tofu on retain99:  64%|██████▎   | 79/124 [09:32<05:20,  7.12s/it]Generating completions of tofu on retain99:  65%|██████▍   | 80/124 [09:43<05:55,  8.08s/it]Generating completions of tofu on retain99:  65%|██████▌   | 81/124 [09:50<05:34,  7.77s/it]Generating completions of tofu on retain99:  66%|██████▌   | 82/124 [09:56<05:05,  7.28s/it]Generating completions of tofu on retain99:  67%|██████▋   | 83/124 [10:03<04:53,  7.15s/it]Generating completions of tofu on retain99:  68%|██████▊   | 84/124 [10:09<04:39,  7.00s/it]Generating completions of tofu on retain99:  69%|██████▊   | 85/124 [10:16<04:29,  6.90s/it]Generating completions of tofu on retain99:  69%|██████▉   | 86/124 [10:22<04:10,  6.60s/it]Generating completions of tofu on retain99:  70%|███████   | 87/124 [10:28<04:02,  6.55s/it]Generating completions of tofu on retain99:  71%|███████   | 88/124 [10:35<03:53,  6.48s/it]Generating completions of tofu on retain99:  72%|███████▏  | 89/124 [10:41<03:42,  6.35s/it]Generating completions of tofu on retain99:  73%|███████▎  | 90/124 [10:51<04:16,  7.54s/it]Generating completions of tofu on retain99:  73%|███████▎  | 91/124 [10:58<04:01,  7.32s/it]Generating completions of tofu on retain99:  74%|███████▍  | 92/124 [11:08<04:22,  8.20s/it]Generating completions of tofu on retain99:  75%|███████▌  | 93/124 [11:17<04:16,  8.26s/it]Generating completions of tofu on retain99:  76%|███████▌  | 94/124 [11:23<03:47,  7.58s/it]Generating completions of tofu on retain99:  77%|███████▋  | 95/124 [11:30<03:35,  7.43s/it]Generating completions of tofu on retain99:  77%|███████▋  | 96/124 [11:36<03:22,  7.23s/it]Generating completions of tofu on retain99:  78%|███████▊  | 97/124 [11:42<03:05,  6.86s/it]Generating completions of tofu on retain99:  79%|███████▉  | 98/124 [11:49<02:59,  6.92s/it]Generating completions of tofu on retain99:  80%|███████▉  | 99/124 [11:57<02:54,  6.98s/it]Generating completions of tofu on retain99:  81%|████████  | 100/124 [12:03<02:44,  6.84s/it]Generating completions of tofu on retain99:  81%|████████▏ | 101/124 [12:13<03:01,  7.88s/it]Generating completions of tofu on retain99:  82%|████████▏ | 102/124 [12:21<02:54,  7.92s/it]Generating completions of tofu on retain99:  83%|████████▎ | 103/124 [12:28<02:39,  7.59s/it]Generating completions of tofu on retain99:  84%|████████▍ | 104/124 [12:35<02:29,  7.50s/it]                                                                                                                                                                                                            Generating completions of tofu on retain99:  85%|████████▍ | 105/124 [12:42<02:18,  7.31s/it]Generating completions of tofu on retain99:  85%|████████▌ | 106/124 [12:49<02:07,  7.10s/it]Generating completions of tofu on retain99:  86%|████████▋ | 107/124 [12:56<01:57,  6.94s/it]Generating completions of tofu on retain99:  87%|████████▋ | 108/124 [13:01<01:46,  6.64s/it]Generating completions of tofu on retain99:  88%|████████▊ | 109/124 [13:08<01:40,  6.69s/it]Generating completions of tofu on retain99:  89%|████████▊ | 110/124 [13:17<01:41,  7.26s/it]Generating completions of tofu on retain99:  90%|████████▉ | 111/124 [13:24<01:34,  7.27s/it]Generating completions of tofu on retain99:  90%|█████████ | 112/124 [13:30<01:23,  6.98s/it]Generating completions of tofu on retain99:  91%|█████████ | 113/124 [13:37<01:14,  6.75s/it]Generating completions of tofu on retain99:  92%|█████████▏| 114/124 [13:43<01:06,  6.67s/it]Generating completions of tofu on retain99:  93%|█████████▎| 115/124 [13:50<00:59,  6.63s/it]Generating completions of tofu on retain99:  94%|█████████▎| 116/124 [14:00<01:02,  7.76s/it]Generating completions of tofu on retain99:  94%|█████████▍| 117/124 [14:08<00:53,  7.68s/it]Generating completions of tofu on retain99:  95%|█████████▌| 118/124 [14:14<00:44,  7.34s/it]Generating completions of tofu on retain99:  96%|█████████▌| 119/124 [14:24<00:41,  8.20s/it]Generating completions of tofu on retain99:  97%|█████████▋| 120/124 [14:31<00:30,  7.70s/it]Generating completions of tofu on retain99:  98%|█████████▊| 121/124 [14:38<00:22,  7.50s/it]Generating completions of tofu on retain99:  98%|█████████▊| 122/124 [14:44<00:14,  7.09s/it]Generating completions of tofu on retain99:  99%|█████████▉| 123/124 [14:51<00:06,  6.90s/it]Generating completions of tofu on retain99: 100%|██████████| 124/124 [14:56<00:00,  6.47s/it]Generating completions of tofu on retain99: 100%|██████████| 124/124 [14:56<00:00,  7.23s/it]
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 246]) torch.Size([32, 246])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 250]) torch.Size([32, 250])
+torch.Size([32, 249]) torch.Size([32, 249])
+torch.Size([32, 250]) torch.Size([32, 250])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 247]) torch.Size([32, 247])
+torch.Size([32, 250]) torch.Size([32, 250])
+torch.Size([32, 250]) torch.Size([32, 250])
+torch.Size([32, 250]) torch.Size([32, 250])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 249]) torch.Size([32, 249])
+torch.Size([32, 247]) torch.Size([32, 247])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 249]) torch.Size([32, 249])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 250]) torch.Size([32, 250])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 248]) torch.Size([32, 248])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 248]) torch.Size([32, 248])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 249]) torch.Size([32, 249])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 250]) torch.Size([32, 250])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 249]) torch.Size([32, 249])
+torch.Size([32, 249]) torch.Size([32, 249])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 255]) torch.Size([32, 255])
+torch.Size([32, 246]) torch.Size([32, 246])
+torch.Size([32, 255]) torch.Size([32, 255])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 248]) torch.Size([32, 248])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 255]) torch.Size([32, 255])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 255]) torch.Size([32, 255])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 250]) torch.Size([32, 250])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 252]) torch.Size([32, 252])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 255]) torch.Size([32, 255])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 255]) torch.Size([32, 255])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 255]) torch.Size([32, 255])
+torch.Size([32, 255]) torch.Size([32, 255])
+torch.Size([32, 251]) torch.Size([32, 251])
+torch.Size([32, 253]) torch.Size([32, 253])
+torch.Size([32, 256]) torch.Size([32, 256])
+torch.Size([32, 254]) torch.Size([32, 254])
+torch.Size([32, 255]) torch.Size([32, 255])
+torch.Size([24, 256]) torch.Size([24, 256])
+Generating completions of tofu on forget01:   0%|          | 0/2 [00:00<?, ?it/s]../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [9,0,0], thread: [69,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [9,0,0], thread: [70,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [9,0,0], thread: [71,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [1,0,0], thread: [97,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [1,0,0], thread: [98,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [1,0,0], thread: [99,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [8,0,0], thread: [101,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [8,0,0], thread: [102,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [8,0,0], thread: [103,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [9,0,0], thread: [61,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [9,0,0], thread: [62,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [9,0,0], thread: [63,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [1,0,0], thread: [88,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [1,0,0], thread: [89,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [1,0,0], thread: [90,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [8,0,0], thread: [84,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [8,0,0], thread: [85,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [8,0,0], thread: [86,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [7,0,0], thread: [2,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [7,0,0], thread: [3,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [7,0,0], thread: [4,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [0,0,0], thread: [111,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [0,0,0], thread: [112,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [0,0,0], thread: [113,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [3,0,0], thread: [64,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [3,0,0], thread: [65,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [3,0,0], thread: [66,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [3,0,0], thread: [69,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [6,0,0], thread: [32,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [6,0,0], thread: [33,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [6,0,0], thread: [34,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [7,0,0], thread: [115,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [7,0,0], thread: [116,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [7,0,0], thread: [117,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [3,0,0], thread: [58,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [3,0,0], thread: [59,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [3,0,0], thread: [60,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [6,0,0], thread: [16,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [6,0,0], thread: [17,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [6,0,0], thread: [18,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [10,0,0], thread: [45,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [10,0,0], thread: [46,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [10,0,0], thread: [47,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [11,0,0], thread: [28,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [11,0,0], thread: [29,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [11,0,0], thread: [30,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [2,0,0], thread: [80,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [2,0,0], thread: [81,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [2,0,0], thread: [82,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [5,0,0], thread: [48,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [5,0,0], thread: [49,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [5,0,0], thread: [50,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [4,0,0], thread: [49,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [4,0,0], thread: [50,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+../aten/src/ATen/native/cuda/IndexKernel.cu:92: operator(): block: [4,0,0], thread: [51,0,0] Assertion `-sizes[i] <= index && index < sizes[i] && "index out of bounds"` failed.
+Generating completions of tofu on forget01:   0%|          | 0/2 [00:01<?, ?it/s]
+torch.Size([32, 256]) torch.Size([32, 256])
+Traceback (most recent call last):
+  File "/home/cs601-eguan3/601.471_FinalProj_Sp25/llm-unlearn-eco/scripts/evaluate_tofu_padded.py", line 266, in <module>
+    engine.inference()
+  File "/home/cs601-eguan3/601.471_FinalProj_Sp25/llm-unlearn-eco/eco/inference.py", line 165, in inference
+    answers = self._generate()
+  File "/home/cs601-eguan3/601.471_FinalProj_Sp25/llm-unlearn-eco/eco/inference.py", line 223, in _generate
+    generated = self.model.generate(
+  File "/home/cs601-eguan3/601.471_FinalProj_Sp25/llm-unlearn-eco/eco/attack/model.py", line 62, in generate
+    return self.model.generate(*args, max_new_tokens=100, **kwargs)
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/transformers/generation/utils.py", line 1576, in generate
+    result = self._greedy_search(
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/transformers/generation/utils.py", line 2494, in _greedy_search
+    outputs = self(
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/transformers/models/phi/modeling_phi.py", line 1169, in forward
+    outputs = self.model(
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/transformers/models/phi/modeling_phi.py", line 1013, in forward
+    attention_mask = attention_mask if (attention_mask is not None and 0 in attention_mask) else None
+  File "/home/cs601-eguan3/.conda/envs/final/lib/python3.10/site-packages/torch/_tensor.py", line 1091, in __contains__
+    return (element == self).any().item()  # type: ignore[union-attr]
+RuntimeError: CUDA error: device-side assert triggered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
